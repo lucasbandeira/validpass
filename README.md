@@ -1,6 +1,16 @@
-# validpass project
+# Validpass project
 
-This project uses Quarkus. This project aims to validate a password input.
+This project uses Quarkus. 
+
+This project aims to validate a password input.
+The output it's a boolean that validates the password with the following rules:
+
+Nine or more characters
+- At least 1 digit
+- At least 1 lowercase letter
+- At least 1 capital letter
+- At least 1 special character (!@#$%^&*()-+)
+- Do not have duplicates characters
 
 Ex:
 ```
