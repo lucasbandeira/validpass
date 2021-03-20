@@ -34,7 +34,9 @@ You can run your application in dev mode that enables live coding using:
 > **_NOTE:_**  http://localhost:8080/validpass/.
 
 ### POST /validpass
-Request Body:
+Request Body *required*
+
+Exemple Value | Schema:
 ```
 {
     "password":"Lbs1235890*"
