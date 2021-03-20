@@ -2,8 +2,7 @@
 
 This project uses Quarkus. This project aims to validate a password input.
 
-```
-Ex:
+Ex:```
 IsValid("") // false  
 IsValid("aa") // false  
 IsValid("ab") // false  
