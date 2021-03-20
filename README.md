@@ -33,6 +33,14 @@ You can run your application in dev mode that enables live coding using:
 
 > **_NOTE:_**  http://localhost:8080/validpass/.
 
+### POST /validpass
+Request Body:
+```
+{
+    "password":"Lbs1235890*"
+}
+```
+
 ## Packaging and running the application
 
 The application can be packaged using:
@@ -41,11 +49,6 @@ The application can be packaged using:
 ```
 It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
 Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
-
-If you want to build an _über-jar_, execute the following command:
-```shell script
-./mvnw package -Dquarkus.package.type=uber-jar
-```
 
 The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
 
