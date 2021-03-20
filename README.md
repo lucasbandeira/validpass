@@ -1,8 +1,17 @@
 # validpass project
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+This project uses Quarkus. This project aims to validate a password input.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+```Ex:
+IsValid("") // false  
+IsValid("aa") // false  
+IsValid("ab") // false  
+IsValid("AAAbbbCc") // false  
+IsValid("AbTp9!foo") // false  
+IsValid("AbTp9!foA") // false
+IsValid("AbTp9 fok") // false
+IsValid("AbTp9!fok") // true
+```
 
 ## Running the application in dev mode
 
@@ -11,7 +20,7 @@ You can run your application in dev mode that enables live coding using:
 ./mvnw compile quarkus:dev
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+> **_NOTE:_**  http://localhost:8080/validpass/.
 
 ## Packaging and running the application
 
