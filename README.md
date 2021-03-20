@@ -1,4 +1,4 @@
-# Validpass project
+# Validpass
 
 This project uses Quarkus. 
 
