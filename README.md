@@ -1,6 +1,9 @@
 # Validpass
 
-This project uses Quarkus. 
+This project uses 
+- Quarkus
+- Java 15
+- Maven 
 
 This project aims to validate a password input.
 The output it's a boolean that validates the password with the following rules:
@@ -31,39 +34,30 @@ You can run your application in dev mode that enables live coding using:
 ./mvnw compile quarkus:dev
 ```
 
-> **_NOTE:_**  http://localhost:8080/validpass/.
+> **_NOTE:_**  http://localhost:8080/validpass/
 
 ### POST /validpass
-Request Body *required*
+Example
 
-Exemple Value | Schema:
+Request Body *required*
+Value | Schema:
 ```
 {
     "password":"Lbs1235890*"
 }
 ```
-
-## Packaging and running the application
-
-The application can be packaged using:
-```shell script
-./mvnw package
+Response | Value
 ```
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
-
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
-
-## Creating a native executable
-
-You can create a native executable using: 
-```shell script
-./mvnw package -Pnative
+true
 ```
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
-```shell script
-./mvnw package -Pnative -Dquarkus.native.container-build=true
-```
 
-You can then execute your native executable with: `./target/validpass-1.0-SNAPSHOT-runner`
+> **_END-POINTS_** http://localhost:8080/q/swagger-ui/
+
+Images:
+
+Swagger-UI: https://drive.google.com/file/d/1FX8D--c6l2nQ2x1X72SRXTSc5O9XRCMN/view?usp=sharing
+
+Postman: https://drive.google.com/file/d/17Tyeo2XdQbL-UND4KYSBbb9vRjNB4MAX/view?usp=sharing
+
+
