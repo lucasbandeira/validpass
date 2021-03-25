@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 @Path("/validpass")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class ExampleResource {
+public class PasswordResource {
     @GET
     public String hello() {
         return "Wellcome! validpass API: http://localhost:8080/q/swagger-ui/";
