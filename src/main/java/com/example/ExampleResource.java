@@ -1,20 +1,28 @@
 package com.example;
 
+import org.eclipse.microprofile.openapi.annotations.Operation;
+import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
+import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
-@Path("/hello")
+@Path("/validpass")
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
 public class ExampleResource {
-
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello RESTEasy";
+        return "Wellcome! validpass API: http://localhost:8080/q/swagger-ui/";
     }
 
     @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    public boolean passwordValidate(Password password) {
-        return password.isValid();
+    @Operation(summary = "Validates the password.")
+    @APIResponse(responseCode = "200",
+            description = "return a boolean that validates the password")
+    @Parameter
+    public boolean passwordValidate(PasswordDTO passwordDTO) {
+        ValidPassword validPassword = new ValidPassword(passwordDTO.password);
+        return validPassword.isValid();
     }
 }
