@@ -54,5 +54,10 @@ true
 
 > **_END-POINTS_** http://localhost:8080/q/swagger-ui/
 
-https://drive.google.com/file/d/1FX8D--c6l2nQ2x1X72SRXTSc5O9XRCMN/view?usp=sharing
+Images:
+
+Swagger-UI: https://drive.google.com/file/d/1FX8D--c6l2nQ2x1X72SRXTSc5O9XRCMN/view?usp=sharing
+
+Postman: https://drive.google.com/file/d/17Tyeo2XdQbL-UND4KYSBbb9vRjNB4MAX/view?usp=sharing
+
 
