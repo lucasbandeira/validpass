@@ -37,14 +37,19 @@ You can run your application in dev mode that enables live coding using:
 > **_NOTE:_**  http://localhost:8080/validpass/
 
 ### POST /validpass
+Example
 Request Body *required*
-
-Exemple Value | Schema:
+Value | Schema:
 ```
 {
     "password":"Lbs1235890*"
 }
 ```
+Response | Value
+```
+true
+```
+
 
 > **_END-POINTS_** http://localhost:8080/q/swagger-ui/
 
