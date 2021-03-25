@@ -1,6 +1,9 @@
 # Validpass
 
-This project uses Quarkus. 
+This project uses 
+- Quarkus
+- Java 15
+- Maven 
 
 This project aims to validate a password input.
 The output it's a boolean that validates the password with the following rules:
@@ -31,7 +34,7 @@ You can run your application in dev mode that enables live coding using:
 ./mvnw compile quarkus:dev
 ```
 
-> **_NOTE:_**  http://localhost:8080/validpass/.
+> **_NOTE:_**  http://localhost:8080/validpass/
 
 ### POST /validpass
 Request Body *required*
@@ -42,6 +45,10 @@ Exemple Value | Schema:
     "password":"Lbs1235890*"
 }
 ```
+
+> **_END-POINTS_** http://localhost:8080/q/swagger-ui/
+
+https://drive.google.com/file/d/1FX8D--c6l2nQ2x1X72SRXTSc5O9XRCMN/view?usp=sharing
 
 ## Packaging and running the application
 
